@@ -1,0 +1,36 @@
+
+@import "bootstrap/scss/bootstrap"; // Ensure this is still at the bottom
+
+/* ----------------------------------------------------
+  Hero Section Styles
+---------------------------------------------------- */
+.hero-section {
+  // Set a minimum height for the hero area
+  min-height: 700px; /* Adjust as needed, e.g., 75vh for viewport height */
+
+  // Background Image Properties
+  background-image: url('./assets/group_photo.jpg'); /* Adjust path to your image */
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: center center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image from repeating */
+
+  // Optional: Add a subtle overlay for text readability
+  // You might need a transparent overlay div inside for this
+  // or use a linear-gradient on the background-image property.
+  // Example for gradient overlay:
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/your-hero-image.jpg');
+
+  // Flexbox utilities for centering content (Bootstrap classes handle this well)
+  display: flex;
+  align-items: center; // Vertically center content
+  justify-content: center; // Horizontally center content
+  text-align: center; // Center text within content
+  color: white; // Ensure text is visible on potentially dark background
+}
+
+// Optional: Responsive adjustments for height on smaller screens
+@include media-breakpoint-down(md) {
+  .hero-section {
+    min-height: 400px; // Slightly shorter on medium and down
+  }
+}
