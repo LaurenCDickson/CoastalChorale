@@ -1,6 +1,4 @@
-//import groupphoto from "./assets/group_photo.jpg"
-
-import CalendarEvents from "./Calendar";
+import CalendarEvents from "../pages/Calendar";
 
 function Home() {
   return (

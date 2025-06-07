@@ -1,7 +1,5 @@
-// src/components/CalendarEvents.tsx
-
 import React, { useEffect, useState } from 'react';
-import { fetchCalendarEvents } from './lib/googleCalendarApi';
+import { fetchCalendarEvents } from '../lib/googleCalendarApi';
 
 interface CalendarEvent {
   id: string;
