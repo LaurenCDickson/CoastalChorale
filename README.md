@@ -7,15 +7,3 @@ Built with Vite, React.js, Bootstrap.js, and Typescript.
 
 Accessible via [this link]()
 
-## Main Pages
-
-### Landing Page
-
-### About Page
-
-### Contact Page
-
-### Recordings Page
-
-### Photos Page
-
