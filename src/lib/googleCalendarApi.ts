@@ -31,7 +31,7 @@ function loadGapi(): Promise<void> {
           gapiInitialized = true;
           resolve();
         },
-        onerror: (error) => {
+        onerror: (error: any) => {
           console.error('Error loading gapi client:', error);
           reject(new Error('Failed to load Google API client'));
         }
